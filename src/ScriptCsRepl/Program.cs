@@ -35,8 +35,7 @@ namespace ScriptCsRepl
 
             var scriptcs = scriptServicesBuilder.Build();
 
-            scriptcs.Repl.Initialize(Enumerable.Empty<string>(), Enumerable.Empty<IScriptPack>());
-            scriptcs.Repl.AddReferences(assemblyReslover.GetAssemblyPaths(string.Empty).ToArray());
+            scriptcs.Repl.Initialize(assemblyReslover.GetAssemblyPaths(string.Empty), Enumerable.Empty<IScriptPack>());
 
             try
             {
