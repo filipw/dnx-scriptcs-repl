@@ -1,0 +1,24 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "ScriptCsRepl Console Application",
+  "authors": [ "filip" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "Microsoft.Dnx.Runtime.Abstractions": "1.0.0-*",
+    "ScriptCs.Hosting": "0.15.0",
+    "ScriptCs.Engine.Roslyn": "0.15.0",
+    "ScriptCs.Engine.Mono": "0.15.0"
+  },
+
+  "commands": {
+    "ScriptCsRepl": "ScriptCsRepl"
+  },
+
+  "frameworks": {
+    "dnx451": {
+    }
+  }
+}

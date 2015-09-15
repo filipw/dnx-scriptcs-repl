@@ -1,0 +1,454 @@
+{
+  "locked": false,
+  "version": 1,
+  "targets": {
+    "DNX,Version=v4.5.1": {
+      "Autofac/3.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Autofac.dll": {}
+        }
+      },
+      "Autofac.Mef/3.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Autofac": "[3.3.1, 4.0.0)"
+        },
+        "compile": {
+          "lib/net40/Autofac.Integration.Mef.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Autofac.Integration.Mef.dll": {}
+        }
+      },
+      "Common.Logging/2.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Common.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Common.Logging.dll": {}
+        }
+      },
+      "ICSharpCode.NRefactory/5.5.1": {
+        "type": "package",
+        "dependencies": {
+          "Mono.Cecil": "0.9.5.4"
+        },
+        "compile": {
+          "lib/Net40/ICSharpCode.NRefactory.Cecil.dll": {},
+          "lib/Net40/ICSharpCode.NRefactory.CSharp.dll": {},
+          "lib/Net40/ICSharpCode.NRefactory.dll": {},
+          "lib/Net40/ICSharpCode.NRefactory.Xml.dll": {}
+        },
+        "runtime": {
+          "lib/Net40/ICSharpCode.NRefactory.Cecil.dll": {},
+          "lib/Net40/ICSharpCode.NRefactory.CSharp.dll": {},
+          "lib/Net40/ICSharpCode.NRefactory.dll": {},
+          "lib/Net40/ICSharpCode.NRefactory.Xml.dll": {}
+        }
+      },
+      "Microsoft.Dnx.Runtime.Abstractions/1.0.0-beta7": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Dnx.Runtime.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Dnx.Runtime.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Web.Xdt/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Microsoft.Web.XmlTransform.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Web.XmlTransform.dll": {}
+        }
+      },
+      "Mono.Cecil/0.9.5.4": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Mono.Cecil.dll": {},
+          "lib/net40/Mono.Cecil.Mdb.dll": {},
+          "lib/net40/Mono.Cecil.Pdb.dll": {},
+          "lib/net40/Mono.Cecil.Rocks.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Mono.Cecil.dll": {},
+          "lib/net40/Mono.Cecil.Mdb.dll": {},
+          "lib/net40/Mono.Cecil.Pdb.dll": {},
+          "lib/net40/Mono.Cecil.Rocks.dll": {}
+        }
+      },
+      "Mono.CSharp/4.0.0.143": {
+        "type": "package",
+        "compile": {
+          "lib/4.5/Mono.CSharp.dll": {}
+        },
+        "runtime": {
+          "lib/4.5/Mono.CSharp.dll": {}
+        }
+      },
+      "Newtonsoft.Json/6.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "NuGet.Core/2.8.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Web.Xdt": "2.1.0"
+        },
+        "compile": {
+          "lib/net40-Client/NuGet.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net40-Client/NuGet.Core.dll": {}
+        }
+      },
+      "Roslyn.Compilers.Common/1.2.20906.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Roslyn.Compilers.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Roslyn.Compilers.dll": {}
+        }
+      },
+      "Roslyn.Compilers.CSharp/1.2.20906.2": {
+        "type": "package",
+        "dependencies": {
+          "Roslyn.Compilers.Common": "1.2.20906.2"
+        },
+        "compile": {
+          "lib/net45/Roslyn.Compilers.CSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Roslyn.Compilers.CSharp.dll": {}
+        }
+      },
+      "ScriptCs.Contracts/0.15.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.Composition"
+        ],
+        "compile": {
+          "lib/net45/ScriptCs.Contracts.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ScriptCs.Contracts.dll": {}
+        }
+      },
+      "ScriptCs.Core/0.15.0": {
+        "type": "package",
+        "dependencies": {
+          "Common.Logging": "2.1.2",
+          "ScriptCs.Contracts": "0.15.0"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.Composition"
+        ],
+        "compile": {
+          "lib/net45/ScriptCs.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ScriptCs.Core.dll": {}
+        }
+      },
+      "ScriptCs.Engine.Mono/0.15.0": {
+        "type": "package",
+        "dependencies": {
+          "Common.Logging": "2.1.2",
+          "ICSharpCode.NRefactory": "5.5.1",
+          "Mono.CSharp": "4.0.0.143",
+          "ScriptCs.Core": "0.15.0"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.Composition"
+        ],
+        "compile": {
+          "lib/net45/ScriptCs.Engine.Mono.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ScriptCs.Engine.Mono.dll": {}
+        }
+      },
+      "ScriptCs.Engine.Roslyn/0.15.0": {
+        "type": "package",
+        "dependencies": {
+          "Common.Logging": "2.1.2",
+          "Roslyn.Compilers.CSharp": "1.2.20906.2",
+          "ScriptCs.Core": "0.15.0"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.Composition"
+        ],
+        "compile": {
+          "lib/net45/ScriptCs.Engine.Roslyn.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ScriptCs.Engine.Roslyn.dll": {}
+        }
+      },
+      "ScriptCs.Hosting/0.15.0": {
+        "type": "package",
+        "dependencies": {
+          "Autofac.Mef": "3.0.3",
+          "Common.Logging": "2.1.2",
+          "Newtonsoft.Json": "6.0.3",
+          "NuGet.Core": "2.8.6",
+          "ScriptCs.Core": "0.15.0"
+        },
+        "compile": {
+          "lib/net45/ScriptCs.Hosting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ScriptCs.Hosting.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Autofac/3.3.1": {
+      "type": "package",
+      "sha512": "dOowodF/tGrsEhiTnrBb+zcXcKxitHMqHw8J+F5ELBsdm2Cypu6ZaSZo4T2wljnMBVqZXLnQWVf2NNIk4IR+2w==",
+      "files": [
+        "Autofac.3.3.1.nupkg",
+        "Autofac.3.3.1.nupkg.sha512",
+        "Autofac.nuspec",
+        "lib/net40/Autofac.dll",
+        "lib/net40/Autofac.xml",
+        "lib/portable-win+net40+sl50+wp8/Autofac.dll",
+        "lib/portable-win+net40+sl50+wp8/Autofac.xml"
+      ]
+    },
+    "Autofac.Mef/3.0.3": {
+      "type": "package",
+      "sha512": "n27ambqDJCyzjHmkD7sHXMyAfmFlvzCghyQM5fE2A4RxQ9c/F2TvpUzlC27hbQOoz8+yK9iY35ccXW/Xzal16A==",
+      "files": [
+        "Autofac.Mef.3.0.3.nupkg",
+        "Autofac.Mef.3.0.3.nupkg.sha512",
+        "Autofac.Mef.nuspec",
+        "lib/net40/Autofac.Integration.Mef.dll",
+        "lib/net40/Autofac.Integration.Mef.xml"
+      ]
+    },
+    "Common.Logging/2.1.2": {
+      "type": "package",
+      "sha512": "aqqmzNbkqmGBkKL84h2gv5BKBW2tj8E11KXYlAUiiNxGXFWG4fxvS7ashi3knx3rsOph8x9HaRmVqLyjv1PWnQ==",
+      "files": [
+        "Common.Logging.2.1.2.nupkg",
+        "Common.Logging.2.1.2.nupkg.sha512",
+        "Common.Logging.nuspec",
+        "lib/net35/Common.Logging.dll",
+        "lib/net35/Common.Logging.pdb",
+        "lib/net35/Common.Logging.xml",
+        "lib/net40/Common.Logging.dll",
+        "lib/net40/Common.Logging.pdb",
+        "lib/net40/Common.Logging.xml"
+      ]
+    },
+    "ICSharpCode.NRefactory/5.5.1": {
+      "type": "package",
+      "sha512": "iFnWweJykC6nHF535Qv1gYMseEWcM8/CvBMDxZWlg4ExafRg5uJm5R30GufpbzSYrxg3ry7RJ4Pnw6ghKmuqfg==",
+      "files": [
+        "ICSharpCode.NRefactory.5.5.1.nupkg",
+        "ICSharpCode.NRefactory.5.5.1.nupkg.sha512",
+        "ICSharpCode.NRefactory.nuspec",
+        "lib/Net40/ICSharpCode.NRefactory.Cecil.dll",
+        "lib/Net40/ICSharpCode.NRefactory.Cecil.xml",
+        "lib/Net40/ICSharpCode.NRefactory.CSharp.dll",
+        "lib/Net40/ICSharpCode.NRefactory.CSharp.xml",
+        "lib/Net40/ICSharpCode.NRefactory.dll",
+        "lib/Net40/ICSharpCode.NRefactory.xml",
+        "lib/Net40/ICSharpCode.NRefactory.Xml.dll",
+        "lib/Net40/ICSharpCode.NRefactory.Xml.xml"
+      ]
+    },
+    "Microsoft.Dnx.Runtime.Abstractions/1.0.0-beta7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "T/aTQeWKnrC35n69MQmqizwhobfpmGJ0iT8x5R1ifEx3ZFHPIu5OB9Iwc5BRhIrY+/+zwikyQJ1fUSa26NfwxA==",
+      "files": [
+        "lib/dnx451/Microsoft.Dnx.Runtime.Abstractions.dll",
+        "lib/dnx451/Microsoft.Dnx.Runtime.Abstractions.xml",
+        "lib/dnxcore50/Microsoft.Dnx.Runtime.Abstractions.dll",
+        "lib/dnxcore50/Microsoft.Dnx.Runtime.Abstractions.xml",
+        "Microsoft.Dnx.Runtime.Abstractions.1.0.0-beta7.nupkg",
+        "Microsoft.Dnx.Runtime.Abstractions.1.0.0-beta7.nupkg.sha512",
+        "Microsoft.Dnx.Runtime.Abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Web.Xdt/2.1.0": {
+      "type": "package",
+      "sha512": "/ieJ02r4MEJM21Eyl+c5kwoJWPhy+qEEcN68JaqDoamabgxJI1jGi/kNLuKvHUCl6tU7E0rMvaR6FmEnDWtS4A==",
+      "files": [
+        "lib/net40/Microsoft.Web.XmlTransform.dll",
+        "Microsoft.Web.Xdt.2.1.0.nupkg",
+        "Microsoft.Web.Xdt.2.1.0.nupkg.sha512",
+        "Microsoft.Web.Xdt.nuspec"
+      ]
+    },
+    "Mono.Cecil/0.9.5.4": {
+      "type": "package",
+      "sha512": "lSrFKGdaagNNm+GSDbHnYo3m31ceBk2PsszYdXFmphfTqB1fnX8lMEasSC6dYzHfiM+3PaMXEMFqgMJYFv1I8A==",
+      "files": [
+        "lib/net20/Mono.Cecil.dll",
+        "lib/net20/Mono.Cecil.Mdb.dll",
+        "lib/net20/Mono.Cecil.Pdb.dll",
+        "lib/net35/Mono.Cecil.dll",
+        "lib/net35/Mono.Cecil.Mdb.dll",
+        "lib/net35/Mono.Cecil.Pdb.dll",
+        "lib/net35/Mono.Cecil.Rocks.dll",
+        "lib/net40/Mono.Cecil.dll",
+        "lib/net40/Mono.Cecil.Mdb.dll",
+        "lib/net40/Mono.Cecil.Pdb.dll",
+        "lib/net40/Mono.Cecil.Rocks.dll",
+        "lib/sl40/Mono.Cecil.dll",
+        "lib/sl40/Mono.Cecil.Rocks.dll",
+        "Mono.Cecil.0.9.5.4.nupkg",
+        "Mono.Cecil.0.9.5.4.nupkg.sha512",
+        "Mono.Cecil.nuspec"
+      ]
+    },
+    "Mono.CSharp/4.0.0.143": {
+      "type": "package",
+      "sha512": "CprGSaPdT9Xy4Xy7nO2KxrhmfcU16gcCXzZ1ceJt0XsRcW992sYoXlvqxm8Q+QFS4D40xkfPQkurF0cC0s9A5Q==",
+      "files": [
+        "lib/4.5/Mono.CSharp.dll",
+        "Mono.CSharp.4.0.0.143.nupkg",
+        "Mono.CSharp.4.0.0.143.nupkg.sha512",
+        "Mono.CSharp.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/6.0.3": {
+      "type": "package",
+      "sha512": "kN7Xp8vjnSEiLsyo5ZiKrRFgBU4P8CvcdxGSUBQ3W2OLqDK5rIABHkgN9Yjzh6kZ7BD58Ge19fz5GvfCnwmyGA==",
+      "files": [
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netcore45/Newtonsoft.Json.dll",
+        "lib/netcore45/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl4+wp7+win8/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl4+wp7+win8/Newtonsoft.Json.xml",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "Newtonsoft.Json.6.0.3.nupkg",
+        "Newtonsoft.Json.6.0.3.nupkg.sha512",
+        "Newtonsoft.Json.nuspec",
+        "tools/install.ps1"
+      ]
+    },
+    "NuGet.Core/2.8.6": {
+      "type": "package",
+      "sha512": "d+0wfKce13nED4eyNoL8SSZO86kNY0Zjo8pgGRB1Xy3EbLf5BetnRkp1G3nywdWuK4ov8oLbT+4rHGnCnAABpA==",
+      "files": [
+        "lib/net40-Client/NuGet.Core.dll",
+        "NuGet.Core.2.8.6.nupkg",
+        "NuGet.Core.2.8.6.nupkg.sha512",
+        "NuGet.Core.nuspec"
+      ]
+    },
+    "Roslyn.Compilers.Common/1.2.20906.2": {
+      "type": "package",
+      "sha512": "cNYHZyvkHLNo2WjaB5MsSowDhkhtNid/uH3ao9lJyihgCYcbUv+daXJ3sjY3cev3gpTRO9+PzuC3JFUCzKNJVA==",
+      "files": [
+        "lib/net45/Roslyn.Compilers.dll",
+        "lib/net45/Roslyn.Compilers.xml",
+        "Roslyn.Compilers.Common.1.2.20906.2.nupkg",
+        "Roslyn.Compilers.Common.1.2.20906.2.nupkg.sha512",
+        "Roslyn.Compilers.Common.nuspec"
+      ]
+    },
+    "Roslyn.Compilers.CSharp/1.2.20906.2": {
+      "type": "package",
+      "sha512": "UglJuClElMjP8rWJtne6FJ+T83D7EGwFKxvHnBV6gJOsylZZLYpXQ5eUglHPEYb+qIsx3JAjgc+A4OrgNxD49Q==",
+      "files": [
+        "lib/net45/Roslyn.Compilers.CSharp.dll",
+        "lib/net45/Roslyn.Compilers.CSharp.xml",
+        "Roslyn.Compilers.CSharp.1.2.20906.2.nupkg",
+        "Roslyn.Compilers.CSharp.1.2.20906.2.nupkg.sha512",
+        "Roslyn.Compilers.CSharp.nuspec"
+      ]
+    },
+    "ScriptCs.Contracts/0.15.0": {
+      "type": "package",
+      "sha512": "yKZX+W+FKkftPs+BSKWNl7eAtrqaC4GdDW+ig74MKrUjgaZVezU/7uXPx/Qwf8cvD3PG7b+KV8u1PNuMkacqHg==",
+      "files": [
+        "lib/net45/ScriptCs.Contracts.dll",
+        "ScriptCs.Contracts.0.15.0.nupkg",
+        "ScriptCs.Contracts.0.15.0.nupkg.sha512",
+        "ScriptCs.Contracts.nuspec"
+      ]
+    },
+    "ScriptCs.Core/0.15.0": {
+      "type": "package",
+      "sha512": "0IlNTSAREqOAwuRYNGocJjFwy2YDcVsacwxwqrOIP9NeJgIo8yPcqLLQG058c06nVwfHaVA4ANxSqjk92fQOFQ==",
+      "files": [
+        "lib/net45/ScriptCs.Core.dll",
+        "ScriptCs.Core.0.15.0.nupkg",
+        "ScriptCs.Core.0.15.0.nupkg.sha512",
+        "ScriptCs.Core.nuspec"
+      ]
+    },
+    "ScriptCs.Engine.Mono/0.15.0": {
+      "type": "package",
+      "sha512": "d9AtUf36YVn9aLbEvK+t2fXppLVURBdZwnYEFISbY8/CZ15b6z1yz6YGcyRjZmYNdOgdESfu2wR9MypLOpIJaA==",
+      "files": [
+        "lib/net45/ScriptCs.Engine.Mono.dll",
+        "ScriptCs.Engine.Mono.0.15.0.nupkg",
+        "ScriptCs.Engine.Mono.0.15.0.nupkg.sha512",
+        "ScriptCs.Engine.Mono.nuspec"
+      ]
+    },
+    "ScriptCs.Engine.Roslyn/0.15.0": {
+      "type": "package",
+      "sha512": "4qfht3QUElahuKm71ttkUaCdzSNL+wbqt81sxCP3pl3cYPQ1bvbJH+p8bUAFgG2GAFDx7kLRaMdvdJeuq/hjNg==",
+      "files": [
+        "lib/net45/ScriptCs.Engine.Roslyn.dll",
+        "ScriptCs.Engine.Roslyn.0.15.0.nupkg",
+        "ScriptCs.Engine.Roslyn.0.15.0.nupkg.sha512",
+        "ScriptCs.Engine.Roslyn.nuspec"
+      ]
+    },
+    "ScriptCs.Hosting/0.15.0": {
+      "type": "package",
+      "sha512": "Pdl1QKnetuQf7sDUYmgpuWDeGROrbAXLNHOuCi2NFkvhc54qcfFLVH9NvgvmSg7ypGd4UCL5tqIAenTOET8Qog==",
+      "files": [
+        "lib/net45/ScriptCs.Hosting.dll",
+        "ScriptCs.Hosting.0.15.0.nupkg",
+        "ScriptCs.Hosting.0.15.0.nupkg.sha512",
+        "ScriptCs.Hosting.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "": [
+      "Microsoft.Dnx.Runtime.Abstractions >= 1.0.0-*",
+      "ScriptCs.Hosting >= 0.15.0",
+      "ScriptCs.Engine.Roslyn >= 0.15.0",
+      "ScriptCs.Engine.Mono >= 0.15.0"
+    ],
+    "DNX,Version=v4.5.1": []
+  }
+}
